@@ -1,5 +1,5 @@
 <?php
-var_dump($progetto)
+print_r($project)
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +12,7 @@ var_dump($progetto)
 <body>
     <div class="container" >
         <h1 calss="text-center" >Attività Progetto</h1>
-        @if($progetto)
+        @if(count($project->attivita)>0)
         <table class="table">
         <thead>
             <tr>
@@ -22,13 +22,13 @@ var_dump($progetto)
             </tr>
         </thead>
         <tbody>
-            
+            @foreach ($project->attivita as $key=>$activity)
             <tr>
-            <th scope="row">{{$progetto->id}}</th>
-            <td>{{$progetto->title}}</td>
-            <td>{{$progetto->description}}</td>
+            <th scope="row">{{$key+1}}</th>
+            <td>{{$activity->title}}</td>
+            <td>{{$activity->description}}</td>
             </tr>
-           
+            @endforeach
         </tbody>
         </table>
         @endif

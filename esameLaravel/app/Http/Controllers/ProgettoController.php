@@ -37,10 +37,9 @@ class ProgettoController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Progetto $progetto)
+    public function show(Progetto $progetti)
     {
-        
-      return  view("infoProg",["progetto"=>$progetto->load("attivita")]);
+        return  view("infoProg",['project'=>$progetti->load("attivita")]);
     }
 
     /**
