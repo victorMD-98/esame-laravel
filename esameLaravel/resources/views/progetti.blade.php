@@ -16,7 +16,7 @@
         <h1 class="text-center" >Progetti</h1>
         <div class="my-1 row">
             <div class="col pe-3">
-            <a class="btn btn-secondary w-25 float-end" href="#" role="button">ADD</a>
+            <a class="btn btn-secondary w-25 float-end" href="progetti/create" role="button">ADD</a>
             </div>
         </div>
         <div>
