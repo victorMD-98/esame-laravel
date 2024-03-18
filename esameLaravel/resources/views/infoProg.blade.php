@@ -1,5 +1,5 @@
 <?php
-print_r($project)
+// print_r($project)
 ?>
 <!DOCTYPE html>
 <html lang="en">
