@@ -10,6 +10,11 @@ class Progetto extends Model
 {
     use HasFactory;
 
+    protected $fillable=[
+        "title",
+        "user_id"
+    ];
+
     public function attivita(): HasMany {
         return $this->hasMany(attivita::class);
     }
